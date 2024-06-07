@@ -7,7 +7,7 @@ import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import mCar from "../../Assets/Projects/mCar.png"
 
 function Projects() {
   return (
@@ -15,18 +15,19 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          A diverse selection of some of my favorite projects!
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="Rise and Shine!"
+              description="A web application devoted to putting all of the information you need in the morning right in once place! Fetches data from weather, news, stock, and spotify APIs to maximize the amount of information to present to the user. Utilizes fluent front-end/back-end integration."
+              tech="Technologies Utilized: Javascript, HTML, CSS, ExpressJS."
               ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://chatify-49.web.app/"
             />
@@ -34,10 +35,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={mCar}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Reinforcement Learning Mountain Car"
+              description="Utilizes the Reinforcement Learning Sarsa-Lambda algorithm to train a car stuck in a ditch the most effective way to manuever itself out. Applies the epsilon-greedy algorithm to ensure proper trial and error occurs in the training process."
+              tech="Technologies Utilized: Python, Numpy"
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -47,8 +49,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Sensor Scramble"
+              description="Sensor Scramble is a game inspired by the hit handheld game Bop It! By seamlessly integrating sensor hardware, an OLED screen, and arduino software, Sensor Scramble rapidly assigns you tasks to complete in a short amount of time. The time allotted to complete each task gets faster as the game goes on!"
+              tech="Technologies Utilized: Arduino Programming"
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -58,8 +61,9 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="Connect4 AI"
+              description="Developed an Artificially Intelligent agent that plays against the user in a modified game of Connect4. The agent was submitted to a tournament of approximately 100 students, and placed in the top 10 agents among all students!"
+              tech="Technologies Utilized: Python"
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
@@ -69,8 +73,9 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Massachusetts Governor Supervised Learning Model"
+              description="Using a large dataset of all Massachusetts towns, a supervised decision tree is constructed based on the training data to determine whether or not the majority of individuals in each Massachusetts town voted for Diehl or Healey in the 2022 governor election. The model averaged a correctness rate of >80%!"
+              tech="Technologies Utilized: Python"
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
@@ -80,9 +85,11 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Mental Health Journal"
+              description="This was my first personal project of my undergraduate career! I programmed a Mental Health Journal in Java provides an easy way for those enrolled in counseling services to monitor their
+              mental health over time and to share key information with counseling professionals. I used the Swing GUI toolkit to have users fill out a form similar to the PHQ-9, which assists professionals in
+              the detection of depression, anxiety, and other mental health conditions. The program would also analyze user inputs by generating a report to an output file."
+              tech="Technologies Used: 2Java, Swing GUI Toolkit"
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
